@@ -5,8 +5,8 @@ export default function ShowSelection({tvShows, setSelectedShow}) {
   return (
     <>
       <nav className="shows">
-        {tvShows.map((element, index) => (
-          <a className="show" key={index}
+        {tvShows.map((element) => (
+          <a className="show" key={element.name}
           onClick={() => setSelectedShow(element)}
           >{element.name}</a>
         ))}
